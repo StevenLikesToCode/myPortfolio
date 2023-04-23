@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: cadetblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1rem 2rem;
+}
+
+
+/* a:hover {
+    background-color: #45567d;
+} */
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ebe8;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#welcome-section p {
+    color: cadetblue;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.projects {
+    text-align: center;
+    background-color: #45567d;
+    padding: 8rem 2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.projects-img {
+    height: calc(100% - 4.8rem);
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    border-radius: 7px;
+}
+
+.projects-title {
+    color: #fff;
+    width: 100%;
+    background-color: #303841;
+    margin: 0;
+    padding: 2rem 0;
+    border-radius: 7px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#contact {
+    background-color: #303841;
+    width: auto;
+    height: 80vh;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-header p {
+    color: #fff;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#contact-links ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#contact-links ul li {
+    padding: 10px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+@media (max-width:1000px) {
+    #contact-links ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #contact-links ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
