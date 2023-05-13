@@ -63,6 +63,7 @@ h1 {
 
 .cursor{
     animation :flash 0.5s linear infinite;
+    margin-left: -15px;
 }
 
 @keyframes flash{
@@ -156,10 +157,18 @@ h2 {
     #contact-links ul {
         grid-template-columns: repeat(2, 1fr);
     }
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 600px) {
     #contact-links ul {
         grid-template-columns: repeat(1, 1fr);
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 300;
     }
 }

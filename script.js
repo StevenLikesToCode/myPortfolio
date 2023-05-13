@@ -1,9 +1,9 @@
 const word = document.querySelector('.word');
 let strIndex = 0;
 const phrases = [
-  'a junior software programmer',
+  'a junior programmer',
   'a web developer',
-  'an UX UI world explorer'
+  'a UX UI world explorer'
 ];
 
 function setText(t) {
