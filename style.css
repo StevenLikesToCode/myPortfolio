@@ -42,7 +42,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #e0ebe8;
+    background-color: #98c8bd;
+}
+
+.profilePic{
+    width: 250px;
 }
 
 h1 {
@@ -51,10 +55,23 @@ h1 {
     font-weight: 700;
 }
 
-#welcome-section p {
-    color: cadetblue;
+#welcome-section span {
+    display: inline;
+    color: rgb(41, 53, 53);
     font-size: 2rem;
-    font-style: italic;
+}
+
+.cursor{
+    animation :flash 0.5s linear infinite;
+}
+
+@keyframes flash{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .projects {
