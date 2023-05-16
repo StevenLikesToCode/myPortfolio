@@ -26,14 +26,9 @@ li {
 a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 1rem 2rem;
 }
-
-
-/* a:hover {
-    background-color: #45567d;
-} */
 
 #welcome-section {
     width: 100%;
@@ -57,7 +52,7 @@ h1 {
 
 #welcome-section span {
     display: inline;
-    color: rgb(41, 53, 53);
+    color: #fff;
     font-size: 2rem;
 }
 
@@ -73,6 +68,53 @@ h1 {
     to{
         opacity: 1;
     }
+}
+/* .aboutMeTextContainer{
+    margin: 0 auto;
+} */
+.skill-section{
+    padding: 2rem 0;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.aboutMeTextContainer{
+    margin: 0 auto;
+    background-color: rgb(55, 115, 227);
+    color: white;
+    max-width: 51rem;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picContainer{
+    width: 50rem;
+    height: 9rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.picContainer > .list{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+.skillPics{
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .projects {
@@ -157,18 +199,56 @@ h2 {
     #contact-links ul {
         grid-template-columns: repeat(2, 1fr);
     }
+
     h1 {
         font-size: 3rem;
         font-weight: 500;
     }
+
+    .aboutMeTextContainer{
+        max-width: 35rem;
+    }
+
+    .picContainer{
+        width: 37rem;
+    }
+
 }
 
 @media (max-width: 600px) {
     #contact-links ul {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #welcome-section {
+        height: 70vh;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300;
     }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .profilePic{
+        max-width: 150px;
+    }
+    
+    #welcome-section span {
+        display: inline;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .aboutMeTextContainer{
+        max-width: 20rem;
+    }
+
+    .picContainer{
+        width: 22rem;
+    }
+
 }

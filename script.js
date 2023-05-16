@@ -1,9 +1,23 @@
+let list = document.querySelector('.list')
+
+list.innerHTML += list.innerHTML
+
+let left = 0
+
+setInterval(function (){
+  left -= 0.1;
+  if (left < -169){
+    left = -59
+  }
+  list.style.left = left + 'rem'
+}, 20)
+
 const word = document.querySelector('.word');
 let strIndex = 0;
 const phrases = [
   'a junior programmer',
   'a web developer',
-  'a UX UI world explorer'
+  'a full-stack software developer'
 ];
 
 function setText(t) {
