@@ -74,6 +74,11 @@ h1 {
     padding: 2rem 0;
     background-color: cornflowerblue;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .aboutMeTextContainer{
@@ -200,7 +205,7 @@ h2 {
 #contact {
     background-color: #303841;
     width: auto;
-    height: 80vh;
+    height: 100vh;
     margin: 0;
     padding: 1rem 2rem;
     display: flex;
